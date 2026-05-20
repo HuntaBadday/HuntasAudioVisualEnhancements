@@ -1,5 +1,5 @@
 # HuntasAudioVisualEnhancements
-A mod that adds extra sound a visual effects to components.
+A mod that adds extra sound and visual effects to components.
 
 ## Installation
 Copy the `HuntasAudioVisualEnhancements` folder to `Logic World/GameData/`
