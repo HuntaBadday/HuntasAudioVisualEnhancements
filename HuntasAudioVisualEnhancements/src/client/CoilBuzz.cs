@@ -35,11 +35,11 @@ public class CoilBuzz {
     }
     
     public void Play() {
-        if (ModClass.BuzzVolume <= 0.1f) {
+        /*if (ModClass.BuzzVolume <= 0.1f) {
             return;
         }
         audioSource.volume = ModClass.BuzzVolume/100.0f;
-        audioSource.Play();
+        audioSource.Play();*/
     }
     
     public void Stop() {

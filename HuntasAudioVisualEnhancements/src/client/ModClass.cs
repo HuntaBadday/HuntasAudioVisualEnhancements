@@ -48,6 +48,7 @@ public class ModClass : ClientMod {
         set => _rampOffSpeed = value;
     }
     
+    /*
     [Setting_SliderFloat("HuntasAudioVisualEnhancements.Volume.BuzzVolume")]
     public static float BuzzVolume {
         get => _buzzVolume;
@@ -56,10 +57,11 @@ public class ModClass : ClientMod {
             updateAllBuzzVolumes();
         }
     }
+    */
     
-    private static float _displayIntensity = 3;
-    private static float _rampOnSpeed = 10;
-    private static float _rampOffSpeed = 20;
+    private static float _displayIntensity = 2;
+    private static float _rampOnSpeed = 20;
+    private static float _rampOffSpeed = 15;
     private static float _buzzVolume = 5;
     
     private static void updateAllIntensities(){
