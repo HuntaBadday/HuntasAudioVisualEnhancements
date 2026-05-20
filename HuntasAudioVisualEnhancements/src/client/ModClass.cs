@@ -13,6 +13,8 @@ using LogicWorld.ClientWorldStuff;
 using LogicWorld.Interfaces;
 using LogicWorld.SharedCode.Components;
 using LogicSettings;
+using LogicUI.MenuTypes;
+using LogicWorld.UI.SharedStuff;
 
 namespace HuntasAudioVisualEnhancements;
 
@@ -23,10 +25,22 @@ public class ModClass : ClientMod {
         
         var harmony = new Harmony("HuntasAudioVisualEnhancements");
         harmony.PatchAll();
-        
         CoilBuzz.InitSound();
         
+        InitLaserWireAndLightControl();
+        
         Logger.Info("HuntasAudioVisualEnhancements - Loaded");
+    }
+    
+    private static void InitLaserWireAndLightControl() {
+        LaserWireAndLightControl.Client.Adapters.ConductorColors.init();
+        LaserWireAndLightControl.Client.Adapters.ThumbnailUpdater.init();
+        
+        ToggleableSingletonMenu<SettingsMenuPage>.OnMenuHidden += LaserWireAndLightControl.client.LaserWire.applySettings;
+        ToggleableSingletonMenu<SettingsMenuPage>.OnMenuHidden += HuntasAudioVisualEnhancements.Lighting.LightingControl.applySettings;
+        
+        // CircuitColor.setCircuitColor(new Color24(255, 140, 10)); // Orange circuits
+        // CircuitColor.setCircuitColor(new Color24(10, 150, 10)); // Green circuits (Clashes with wire outlines)
     }
     
     [Setting_SliderFloat("HuntasAudioVisualEnhancements.DisplayEffect.DisplayIntensity")]

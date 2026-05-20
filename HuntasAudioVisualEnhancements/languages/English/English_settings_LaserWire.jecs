@@ -1,0 +1,26 @@
+MHG.SettingsMenu.Pages.Graphics.Headings.HuntasAudioVisualEnhancements.LaserWire: "Laser Wire"
+HuntasAudioVisualEnhancements.LaserWire.Enable: "Enable"
+HuntasAudioVisualEnhancements.LaserWire.On.Color: "On Color"
+HuntasAudioVisualEnhancements.LaserWire.On.Glowness: "On Glowness"
+HuntasAudioVisualEnhancements.LaserWire.Off.Color: "Off Color"
+HuntasAudioVisualEnhancements.LaserWire.Off.Glowness: "Off Glowness"
+
+HuntasAudioVisualEnhancements.LaserWire.Enable.Description: """
+    Enable the Laser Wires.
+    """
+
+HuntasAudioVisualEnhancements.LaserWire.On.Color.Description: """
+    The color of the wire when turned on.
+    """
+
+HuntasAudioVisualEnhancements.LaserWire.Off.Color.Description: """
+    The color of the wire when turned off.
+    """
+
+HuntasAudioVisualEnhancements.LaserWire.On.Glowness.Description: """
+    How much the wire should glow when on.
+    """
+
+HuntasAudioVisualEnhancements.LaserWire.Off.Glowness.Description: """
+    How much the wire should glow when off.
+    """

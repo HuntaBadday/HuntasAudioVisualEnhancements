@@ -1,0 +1,25 @@
+HuntasAudioVisualEnhancements.Lighting.Enable:
+    Page: Graphics
+    Heading: HuntasAudioVisualEnhancements.Lighting
+
+HuntasAudioVisualEnhancements.Lighting.LightSun:
+    Page: Graphics
+    Heading: HuntasAudioVisualEnhancements.Lighting
+    SliderInterval: 0.1
+    DecimalPlacesToDisplay: 1
+    Min: 0
+    Max: 20
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.Lighting.Enable
+
+HuntasAudioVisualEnhancements.Lighting.LightAmbient:
+    Page: Graphics
+    Heading: HuntasAudioVisualEnhancements.Lighting
+    SliderInterval: 0.1
+    DecimalPlacesToDisplay: 1
+    Min: 0
+    Max: 20
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.Lighting.Enable

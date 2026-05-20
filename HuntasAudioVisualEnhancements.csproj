@@ -16,6 +16,9 @@
       <Reference Include="JimmysUnityUtilities">
         <HintPath>..\LogicWorld\Logic_World_Data\Managed\JimmysUnityUtilities.dll</HintPath>
       </Reference>
+      <Reference Include="LICC">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LICC.dll</HintPath>
+      </Reference>
       <Reference Include="LogicAPI">
         <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicAPI.dll</HintPath>
       </Reference>
@@ -27,6 +30,9 @@
       </Reference>
       <Reference Include="LogicSettings.Core">
         <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicSettings.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicUI">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicUI.dll</HintPath>
       </Reference>
       <Reference Include="LogicWorld">
         <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.dll</HintPath>
@@ -48,6 +54,9 @@
       </Reference>
       <Reference Include="LogicWorld.SharedCode">
         <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.SharedCode.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicWorld.UI">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.UI.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.AudioModule">
         <HintPath>..\LogicWorld\Logic_World_Data\Managed\UnityEngine.AudioModule.dll</HintPath>

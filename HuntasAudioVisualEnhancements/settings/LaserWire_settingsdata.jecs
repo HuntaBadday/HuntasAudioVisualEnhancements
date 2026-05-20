@@ -1,0 +1,37 @@
+HuntasAudioVisualEnhancements.LaserWire.Enable:
+    Page: Graphics
+    Heading: HuntasAudioVisualEnhancements.LaserWire
+
+HuntasAudioVisualEnhancements.LaserWire.On.Color:
+    Page: Graphics
+    Heading: HuntasAudioVisualEnhancements.LaserWire
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.LaserWire.Enable
+
+HuntasAudioVisualEnhancements.LaserWire.On.Glowness:
+    Page: Graphics
+    Heading: HuntasAudioVisualEnhancements.LaserWire
+    SliderInterval: 0.1
+    Min: 1
+    Max: 20
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.LaserWire.Enable
+
+HuntasAudioVisualEnhancements.LaserWire.Off.Color:
+    Page: Graphics
+    Heading: HuntasAudioVisualEnhancements.LaserWire
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.LaserWire.Enable
+
+HuntasAudioVisualEnhancements.LaserWire.Off.Glowness:
+    Page: Graphics
+    Heading: HuntasAudioVisualEnhancements.LaserWire
+    SliderInterval: 0.1
+    Min: 1
+    Max: 20
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.LaserWire.Enable

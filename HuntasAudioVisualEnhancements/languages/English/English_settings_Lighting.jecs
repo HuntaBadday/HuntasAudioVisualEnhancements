@@ -1,0 +1,16 @@
+MHG.SettingsMenu.Pages.Graphics.Headings.HuntasAudioVisualEnhancements.Lighting: "Lighting"
+HuntasAudioVisualEnhancements.Lighting.Enable: "Enable"
+HuntasAudioVisualEnhancements.Lighting.LightSun: "Sun Intensity"
+HuntasAudioVisualEnhancements.Lighting.LightAmbient: "Ambient Light Intensity"
+
+HuntasAudioVisualEnhancements.Lighting.Enable.Description: """
+    Enable lighting modifications.
+    """
+
+HuntasAudioVisualEnhancements.Lighting.LightSun.Description: """
+    Intensity of the sun.
+    """
+
+HuntasAudioVisualEnhancements.Lighting.LightAmbient.Description: """
+    Intensity of the ambient light.
+    """
