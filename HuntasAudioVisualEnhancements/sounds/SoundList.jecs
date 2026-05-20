@@ -1,0 +1,20 @@
+HuntasAudioVisualEnhancements.buzz:
+    MaxRandomPitchVariation: 0.1
+    MaxRandomVolumeVariation: 0.1
+    OutputGroup: MusicComponents
+    Clips:
+        - HuntasAudioVisualEnhancements/sounds/clips/buzz.wav
+
+HuntasAudioVisualEnhancements.lightOn:
+    MaxRandomPitchVariation: 0.03
+    MaxRandomVolumeVariation: 0.1
+    OutputGroup: MusicComponents
+    Clips:
+        - HuntasAudioVisualEnhancements/sounds/clips/lightOn.wav
+
+HuntasAudioVisualEnhancements.lightOff:
+    MaxRandomPitchVariation: 0.03
+    MaxRandomVolumeVariation: 0.1
+    OutputGroup: MusicComponents
+    Clips:
+        - HuntasAudioVisualEnhancements/sounds/clips/lightOff.wav

@@ -1,0 +1,33 @@
+HuntasAudioVisualEnhancements.DisplayEffect.DisplayIntensity:
+    Page: Graphics
+    Heading: Retro_Lights
+    Min: 0.1
+    Max: 100
+    SliderInterval: 0.1
+    DecimalPlacesToDisplay: 1
+    PerformanceImpact: Low
+    
+HuntasAudioVisualEnhancements.DisplayEffect.RampOnSpeed:
+    Page: Graphics
+    Heading: Retro_Lights
+    Min: 0
+    Max: 100
+    SliderInterval: 0.1
+    DecimalPlacesToDisplay: 2
+    PerformanceImpact: Low
+    
+HuntasAudioVisualEnhancements.DisplayEffect.RampOffSpeed:
+    Page: Graphics
+    Heading: Retro_Lights
+    Min: 0
+    Max: 100
+    SliderInterval: 0.1
+    DecimalPlacesToDisplay: 2
+    PerformanceImpact: Low
+    
+HuntasAudioVisualEnhancements.Volume.BuzzVolume:
+    Page: Audio
+    Heading: Volume
+    Min: 0
+    Max: 100
+    SliderInterval: 1

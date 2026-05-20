@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>HarmonyForLogicWorld\assemblies\client\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="JECS">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\JECS.dll</HintPath>
+      </Reference>
+      <Reference Include="JimmysUnityUtilities">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\JimmysUnityUtilities.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicAPI">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicAPI.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicAPI.Client">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicAPI.Client.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicLog">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicLog.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicSettings.Core">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicSettings.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicWorld">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicWorld.Audio">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.Audio.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicWorld.ClientCode">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.ClientCode.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicWorld.ClientWorldStuff">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.ClientWorldStuff.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicWorld.Interfaces">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.Interfaces.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicWorld.Rendering">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.Rendering.dll</HintPath>
+      </Reference>
+      <Reference Include="LogicWorld.SharedCode">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\LogicWorld.SharedCode.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AudioModule">
+        <HintPath>..\LogicWorld\Logic_World_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\LogicWorld\Server\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="HuntasAudioVisualEnhancements\pcm\" />
+    </ItemGroup>
+
+</Project>

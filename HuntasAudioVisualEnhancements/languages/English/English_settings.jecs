@@ -1,0 +1,19 @@
+HuntasAudioVisualEnhancements.DisplayEffect.DisplayIntensity: "Display Intensity"
+HuntasAudioVisualEnhancements.DisplayEffect.RampOnSpeed: "Ramp Up Speed"
+HuntasAudioVisualEnhancements.DisplayEffect.RampOffSpeed: "Ramp Down Speed"
+MHG.SettingsMenu.Pages.Graphics.Headings.Retro_Lights: "Retro Lights"
+
+HuntasAudioVisualEnhancements.Volume.BuzzVolume: "Buzz"
+
+HuntasAudioVisualEnhancements.DisplayEffect.DisplayIntensity.Description: """
+    Display light intensity multiplier.
+    ![Alt help](https://huntabadday.com/docs/help.gif "help")
+    """
+HuntasAudioVisualEnhancements.DisplayEffect.RampOnDivider.Description: """
+    Time it takes for a display to illuminate.
+    \* No specified length.
+    """
+HuntasAudioVisualEnhancements.DisplayEffect.RampOffDivider.Description: """
+    Time it takes for a display to turn off.
+    \* No specified length.
+    """
