@@ -43,12 +43,25 @@ public class ModClass : ClientMod {
         // CircuitColor.setCircuitColor(new Color24(10, 150, 10)); // Green circuits (Clashes with wire outlines)
     }
     
+    // TODO: Move the settings for reto lights into a dedicated class
+    [Setting_Toggle("HuntasAudioVisualEnhancements.DisplayEffect.Enable")]
+    public static bool Enabled {
+        get => _enabled;
+        set => _enabled = value;
+    }
+    
+    [Setting_Toggle("HuntasAudioVisualEnhancements.DisplayEffect.EnableSound")]
+    public static bool SoundEnabled {
+        get => _soundEnabled;
+        set => _soundEnabled = value;
+    }
+    
     [Setting_SliderFloat("HuntasAudioVisualEnhancements.DisplayEffect.DisplayIntensity")]
     public static float DisplayIntensity {
         get => _displayIntensity;
         set {
             _displayIntensity = value;
-            updateAllIntensities();
+            updateAllDisplays();
         }
     }
     [Setting_SliderFloat("HuntasAudioVisualEnhancements.DisplayEffect.RampOnSpeed")]
@@ -73,12 +86,14 @@ public class ModClass : ClientMod {
     }
     */
     
+    private static bool _enabled = false;
+    private static bool _soundEnabled = false;
     private static float _displayIntensity = 2;
     private static float _rampOnSpeed = 20;
     private static float _rampOffSpeed = 15;
     private static float _buzzVolume = 5;
     
-    private static void updateAllIntensities(){
+    private static void updateAllDisplays(){
         var mainWorld = Instances.MainWorld;
         if (mainWorld == null)
         {

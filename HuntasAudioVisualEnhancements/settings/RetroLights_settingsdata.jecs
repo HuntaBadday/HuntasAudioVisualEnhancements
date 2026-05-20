@@ -1,11 +1,21 @@
+HuntasAudioVisualEnhancements.DisplayEffect.Enable:
+    Page: Graphics
+    Heading: Retro_Lights
+HuntasAudioVisualEnhancements.DisplayEffect.EnableSound:
+    Page: Graphics
+    Heading: Retro_Lights
+
 HuntasAudioVisualEnhancements.DisplayEffect.DisplayIntensity:
     Page: Graphics
     Heading: Retro_Lights
-    Min: 0.1
+    Min: 0
     Max: 100
     SliderInterval: 0.1
     DecimalPlacesToDisplay: 1
     PerformanceImpact: Low
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.DisplayEffect.Enable
     
 HuntasAudioVisualEnhancements.DisplayEffect.RampOnSpeed:
     Page: Graphics
@@ -13,8 +23,11 @@ HuntasAudioVisualEnhancements.DisplayEffect.RampOnSpeed:
     Min: 0
     Max: 100
     SliderInterval: 0.1
-    DecimalPlacesToDisplay: 2
+    DecimalPlacesToDisplay: 1
     PerformanceImpact: Low
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.DisplayEffect.Enable
     
 HuntasAudioVisualEnhancements.DisplayEffect.RampOffSpeed:
     Page: Graphics
@@ -22,8 +35,11 @@ HuntasAudioVisualEnhancements.DisplayEffect.RampOffSpeed:
     Min: 0
     Max: 100
     SliderInterval: 0.1
-    DecimalPlacesToDisplay: 2
+    DecimalPlacesToDisplay: 1
     PerformanceImpact: Low
+    Controls:
+        ToggleControls:
+            - HuntasAudioVisualEnhancements.DisplayEffect.Enable
     
 #HuntasAudioVisualEnhancements.Volume.BuzzVolume:
 #    Page: Audio

@@ -44,35 +44,39 @@ public class PanelDisplay : LogicWorld.ClientCode.PanelDisplay {
         
         //Logger.Info(ModClass.RampOnSpeed.ToString());
         
-        float displayIntensity = ModClass.DisplayIntensity;
-        
-        GpuColor blockColor = (GpuColor)GetCurrentColor.Invoke(this, null);
-        float blockR = blockColor.r;
-        float blockG = blockColor.g;
-        float blockB = blockColor.b;
-        
-        currentR = calcNewValue(currentR, blockR);
-        currentG = calcNewValue(currentG, blockG);
-        currentB = calcNewValue(currentB, blockB);
-        if (currentR != blockR || currentG != blockG || currentB != blockB) {
-            ContinueUpdatingForAnotherFrame();
+        if (ModClass.Enabled) {
+            float displayIntensity = ModClass.DisplayIntensity;
+            
+            GpuColor blockColor = (GpuColor)GetCurrentColor.Invoke(this, null);
+            float blockR = blockColor.r;
+            float blockG = blockColor.g;
+            float blockB = blockColor.b;
+            
+            currentR = calcNewValue(currentR, blockR);
+            currentG = calcNewValue(currentG, blockG);
+            currentB = calcNewValue(currentB, blockB);
+            if (currentR != blockR || currentG != blockG || currentB != blockB) {
+                ContinueUpdatingForAnotherFrame();
+            }
+            
+            SetBlockColor(new GpuColor(currentR*displayIntensity, currentG*displayIntensity, currentB*displayIntensity));
         }
-        
-        SetBlockColor(new GpuColor(currentR*displayIntensity, currentG*displayIntensity, currentB*displayIntensity));
         
         if (lastStates.Length != InputCount) {
             lastStates = new bool[InputCount];
             ContinueUpdatingForAnotherFrame();
         }
         
-        for (int i = 0; i < InputCount; i++) {
-            bool state = GetInputState(i);
-            if (state && !lastStates[i]) {
-                SoundPlayer.PlaySoundAt(lightOn, Address);
-            } else if (!state && lastStates[i]) {
-                SoundPlayer.PlaySoundAt(lightOff, Address);
+        if (ModClass.SoundEnabled) {
+            for (int i = 0; i < InputCount; i++) {
+                bool state = GetInputState(i);
+                if (state && !lastStates[i]) {
+                    SoundPlayer.PlaySoundAt(lightOn, Address);
+                } else if (!state && lastStates[i]) {
+                    SoundPlayer.PlaySoundAt(lightOff, Address);
+                }
+                lastStates[i] = state;
             }
-            lastStates[i] = state;
         }
     }
     
